@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan - SalmaKitchen</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff9f0;
+        }
+        .header {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .menu {
+            background-color: #ff8e8e;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .menu a:hover {
+            background-color: #ff5252;
+        }
+        .container {
+            display: flex;
+            min-height: calc(100vh - 180px);
+        }
+        .left {
+            flex: 1;
+            background-color: #ffecec;
+            padding: 20px;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+            background-color: white;
+        }
+        .right {
+            flex: 1;
+            background-color: #ffecec;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #ff6b6b;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ffd6d6;
+            border-radius: 5px;
+            background-color: #fff9f9;
+        }
+        .btn-submit {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #ff5252;
+        }
+        .info-box {
+            background-color: #fff;
+            border: 1px solid #ffd6d6;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .social-icon {
+            color: #ff6b6b;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Form Pemesanan SalmaKitchen</h1>
+        <marquee>🍰 Gratis ongkir untuk pemesanan di atas Rp50.000 • Konfirmasi via WA 085871089375</marquee>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Beranda</a>
+        <a href="transaksi.html">Pesan Sekarang</a>
+        <a href="tentang.html">Tentang Kami</a>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="info-box">
+                <h3>Cara Pemesanan</h3>
+                <ol>
+                    <li>Isi form dengan data lengkap</li>
+                    <li>Transfer ke BNI 1881084082</li>
+                    <li>Konfirmasi via WhatsApp 085871089375</li>
+                    <li>Pesanan diproses dalam 1x24 jam</li>
+                </ol>
+            </div>
+
+            <div class="info-box">
+                <h3>Info Penting</h3>
+                <p>⏰ Waktu pengiriman: 1-2 hari kerja</p>
+                <p>🚚 Ongkir mulai Rp10.000</p>
+                <p>💳 Pembayaran via transfer bank</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Data Pembeli</h2>
+            <form>
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="wa">Nomor WhatsApp:</label>
+                <input type="tel" id="wa" name="wa" required>
+
+                <label for="alamat">Alamat Lengkap:</label>
+                <textarea id="alamat" name="alamat" rows="4" required>Dapur rumah no 17 aja</textarea>
+
+                <label for="produk">Pilih Produk:</label>
+                <select id="produk" name="produk" required>
+                    <option value="">-- Pilih Produk --</option>
+                    <option value="stup-roti">Stup Roti Cheese - Rp15.000</option>
+                    <option value="pudot">Pudot Coklat - Rp12.000</option>
+                    <option value="risol">Risol Smoked Beef Mayo - Rp10.000</option>
+                </select>
+
+                <label for="jumlah">Jumlah:</label>
+                <input type="number" id="jumlah" name="jumlah" min="1" value="1" required>
+
+                <label for="catatan">Catatan (opsional):</label>
+                <textarea id="catatan" name="catatan" rows="2"></textarea>
+
+                <button type="submit" class="btn-submit">PROSES PESANAN</button>
+            </form>
+        </div>
+
+        <div class="right">
+            <div class="info-box">
+                <h3>Menu Best Seller</h3>
+                <p>🥇 Stup Roti Cheese</p>
+                <p>🥈 Pudot Coklat</p>
+                <p>🥉 Risol Smoked Beef</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Kontak Kami</h3>
+                <p><i class="fab fa-whatsapp social-icon"></i> 085871089375</p>
+                <p><i class="fas fa-envelope social-icon"></i> this.is.salma.kitchen@gmail.com</p>
+                <p><i class="fab fa-instagram social-icon"></i> @_salmakitchen_</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 SalmaKitchen - Dessert Milenial sejak 2018</p>
+    </div>
+</body>
+</html>
