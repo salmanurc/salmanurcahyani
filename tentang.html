@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - SalmaKitchen</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff9f0;
+        }
+        .header {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .menu {
+            background-color: #ff8e8e;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .menu a:hover {
+            background-color: #ff5252;
+        }
+        .container {
+            display: flex;
+            min-height: calc(100vh - 180px);
+        }
+        .left {
+            flex: 1;
+            background-color: #ffecec;
+            padding: 20px;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+            background-color: white;
+        }
+        .right {
+            flex: 1;
+            background-color: #ffecec;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .profil {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #fff9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(255,107,107,0.1);
+        }
+        .profil img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+            border: 5px solid #ffd6d6;
+        }
+        .sejarah {
+            background-color: #fff9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff6b6b;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 20px 0;
+        }
+        .timeline-item {
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ff6b6b;
+        }
+        .timeline-year {
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        .info-box {
+            background-color: white;
+            border: 1px solid #ffd6d6;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #ff6b6b;
+            border-bottom: 2px dashed #ffd6d6;
+            padding-bottom: 10px;
+        }
+        .social-icon {
+            color: #ff6b6b;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Tentang SalmaKitchen</h1>
+        <marquee>🍰 Dessert dengan cinta sejak 2018 • Dari dapur kecil hingga bisa beli HP sendiri!</marquee>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Beranda</a>
+        <a href="transaksi.html">Pesan Sekarang</a>
+        <a href="tentang.html">Tentang Kami</a>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="info-box">
+                <h3>Navigasi Cepat</h3>
+                <ul>
+                    <li><a href="#sejarah">Sejarah Kami</a></li>
+                    <li><a href="#pendiri">Pendiri</a></li>
+                    <li><a href="#visi">Visi Misi</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Fakta Menarik</h3>
+                <p>❤️ Made with love</p>
+                <p>📦 1000+ produk terjual</p>
+                <p>👩‍🍳 Dibuat manual tanpa mesin</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="sejarah" class="sejarah">
+                <h2>Sejarah Kami</h2>
+                <p>SalmaKitchen berawal dari usaha kecil-kecilan Salma saat masih SMP di tahun 2018. Awalnya hanya jualan ke teman-teman sekolah untuk mengumpulkan uang beli HP baru. Saat pandemi COVID-19, usaha mulai berkembang secara online dan terus bertahan hingga kini.</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-year">2018</span>
+                        <p>Mulai jualan dessert ke teman-teman SMP</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">2020</span>
+                        <p>Mulai berjualan online selama pandemi</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">2022</span>
+                        <p>Pertama kali bisa beli HP dari hasil jualan</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">2025</span>
+                        <p>Terus beroperasi sambil kuliah</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pendiri" class="profil">
+                <img src="images/foto-salma.png" alt="Salma - Pendiri SalmaKitchen">
+                <div>
+                    <h2>Salma Nur Cahyani</h2>
+                    <p><strong>Mahasiswa UNIKOM | NIM: 10524013</strong></p>
+                    <p>"Dibuat dengan bahan premium dan ketelatenan. Saya memulai SalmaKitchen dengan modal nekat dan semangat belajar. Semua resep dikembangkan sendiri melalui eksperimen di dapur rumah."</p>
+                </div>
+            </div>
+
+            <div id="visi" class="info-box">
+                <h2>Visi Misi</h2>
+                <p><strong>Visi:</strong> Menjadi usaha dessert rumahan dengan cita rasa profesional yang terjangkau</p>
+                <p><strong>Misi:</strong></p>
+                <ul>
+                    <li>Menggunakan bahan fresh setiap hari</li>
+                    <li>Tanpa pengawet dan pewarna buatan</li>
+                    <li>Pelayanan ramah dan responsif</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="info-box">
+                <h3 id="kontak">Kontak Kami</h3>
+                <p><i class="fab fa-whatsapp social-icon"></i> 085871089375</p>
+                <p><i class="fas fa-envelope social-icon"></i> this.is.salma.kitchen@gmail.com</p>
+                <p><i class="fab fa-instagram social-icon"></i> @_salmakitchen_</p>
+                <p><i class="fas fa-home social-icon"></i> Dapur rumah no 17</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Testimoni</h3>
+                <p>"gaa pernahh bosen buat borong jajanan salmakichen since 2020"</p>
+                <p><strong>- Aulia</strong></p>
+                <p>"gilaakkk enak parah inimah 1000/10"</p>
+                <p><strong>- Denti</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 SalmaKitchen - Dessert dengan cinta sejak 2018</p>
+    </div>
+</body>
+</html>

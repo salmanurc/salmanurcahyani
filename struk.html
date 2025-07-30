@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Struk Pemesanan - SalmaKitchen</title>
+  <style>
+    body {
+      background-color: #fff9f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header, .footer {
+      background-color: #ff6b6b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .menu {
+      background-color: #ff8e8e;
+      overflow: hidden;
+      text-align: center;
+    }
+    .menu a {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+    }
+    .menu a:hover {
+      background-color: #ff5252;
+    }
+    .struk-box {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: white;
+      border: 2px solid #ffd6d6;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #ff6b6b;
+    }
+    .info {
+      margin-bottom: 10px;
+    }
+    .label {
+      font-weight: bold;
+      color: #ff5252;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Struk Pemesanan</h1>
+  </div>
+
+  <div class="menu">
+    <a href="index.html">Beranda</a>
+    <a href="transaksi.html">Pesan</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="struk.html">Struk</a>
+  </div>
+
+  <div class="struk-box">
+    <h2>Pesanan Berhasil!</h2>
+    <div class="info"><span class="label">Nama:</span> <span id="nama"></span></div>
+    <div class="info"><span class="label">WhatsApp:</span> <span id="wa"></span></div>
+    <div class="info"><span class="label">Alamat:</span> <span id="alamat"></span></div>
+    <div class="info"><span class="label">Produk:</span> <span id="produk"></span></div>
+    <div class="info"><span class="label">Jumlah:</span> <span id="jumlah"></span></div>
+    <div class="info"><span class="label">Catatan:</span> <span id="catatan"></span></div>
+    <p style="text-align: center; margin-top: 20px;">Terima kasih telah memesan di SalmaKitchen!</p>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 SalmaKitchen</p>
+  </div>
+
+  <script>
+    // Ambil data dari localStorage
+    document.getElementById('nama').textContent = localStorage.getItem('nama') || '-';
+    document.getElementById('wa').textContent = localStorage.getItem('wa') || '-';
+    document.getElementById('alamat').textContent = localStorage.getItem('alamat') || '-';
+    document.getElementById('produk').textContent = localStorage.getItem('produk') || '-';
+    document.getElementById('jumlah').textContent = localStorage.getItem('jumlah') || '-';
+    document.getElementById('catatan').textContent = localStorage.getItem('catatan') || '-';
+  </script>
+</body>
+</html>
